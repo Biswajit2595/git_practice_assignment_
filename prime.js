@@ -1,4 +1,5 @@
-let num=4;
+let num=20;
+
 let prime=((num)=>{
     if(num<=1)
     {
@@ -7,11 +8,11 @@ let prime=((num)=>{
     else
     {
         let factors=0;
-        for(let a=2;a<num;a++)
+        for(let i=2;i<num;i++)
         {
-            if(num%a===0)
+            if(num%i===0)
             {
-                factors++;
+                factors+1;
             }
         }
         if(factors===0)
@@ -22,6 +23,4 @@ let prime=((num)=>{
     return false;
 
 })
-
-let res=prime(num);
-console.log(res);
+console.log(prime(num));
